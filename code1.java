@@ -32,6 +32,7 @@ public class code1 {
            temp=temp.next;
         }
 
+        System.out.println(1);
         
     }
 }
