@@ -6,6 +6,15 @@ public class code1 {
             temp=temp.next;
         }
     }
+
+   public static void displayR(Node head) {
+       if (head == null) {
+           return;
+       } else {
+           System.out.println(head.data);
+           displayR(head.next);
+       }
+   }
     public static class Node{
         int data; //value
         Node next; //address of next node
@@ -27,7 +36,9 @@ public class code1 {
         c.next=d;
         d.next=e;
         e.next=f;
-        Display(a);
+//        Display(a);
+        displayR(a);
+        
         
     }
 }
