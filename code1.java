@@ -8,6 +8,7 @@ public class code1 {
     }
 
    public static void displayR(Node head) {
+          //Display rescusively
        if (head == null) {
            return;
        } else {
@@ -15,6 +16,24 @@ public class code1 {
            displayR(head.next);
        }
    }
+
+   public static void ReverseDisplay(Node head){
+        if(head==null)
+            return;
+        ReverseDisplay(head.next);
+       System.out.println(head.data);
+   }
+
+   public static void length(Node head){
+   Node temp=head;
+   int count=0;
+   while(temp!=null){
+       count++;
+       temp=temp.next;
+   }
+       System.out.println(count);
+   }
+
     public static class Node{
         int data; //value
         Node next; //address of next node
@@ -36,9 +55,9 @@ public class code1 {
         c.next=d;
         d.next=e;
         e.next=f;
-//        Display(a);
-        displayR(a);
-        
-        
+        Display(a);
+//        displayR(a);
+//        ReverseDisplay(a);
+        length(a);
     }
 }
