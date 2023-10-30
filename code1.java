@@ -18,6 +18,7 @@ public class code1 {
    }
 
    public static void ReverseDisplay(Node head){
+  //Reverse display in recursive
         if(head==null)
             return;
         ReverseDisplay(head.next);
@@ -25,7 +26,8 @@ public class code1 {
    }
 
    public static void length(Node head){
-   Node temp=head;
+   //length of linked list
+       Node temp=head;
    int count=0;
    while(temp!=null){
        count++;
